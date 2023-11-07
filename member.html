@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Detail</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="title">
+    <h1>Enter Member Details</h1>
+    </div>
+    <div class="form">
+    <form id="user-details-form">
+        <div class="nameDetail">
+        <label for="name">Name</label>
+        <div class="normalInput">
+        <input type="text" id="name"placeholder="name..." required>
+        </div>
+        </div>
+        <div class="birthdayDetail">
+        <label for="birthday">Birthday</label>
+        <div class="normalInput">
+        <input type="date" id="birthday" required>
+        </div>
+        </div>
+        <div class="addressDetail">
+        <label for="address">Address</label>
+        <div class="normalInput">
+        <textarea id="address" required placeholder="address..."></textarea>
+        </div>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="button" id="exportPdf" style="margin-bottom:10px;">Export to PDF</button>
+        </div>
+        <div>
+        <button type="button" id="logout" onclick="logoutToLogin()" style="background-color: red;margin-bottom:50px;border:2px solid #000000;padding:10px;width: 50%;cursor: pointer;">Logout</button>
+    </div>
+    <div class="message" id="message">                                          </div>
+    </form>
+    </div>
+    </div>
+    <script src="pdfgenerator.js"></script>
+</body>
+</html>
